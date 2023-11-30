@@ -1,5 +1,7 @@
-<script setup lang="ts">
-
+<script setup>
+const route = useRoute()
+console.log(route.params.id)
+const app = useNuxtApp()
 </script>
 
 <template>

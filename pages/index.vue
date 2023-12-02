@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div>index page</div>
+  <div>Main page</div>
 </template>
 
 <style scoped>

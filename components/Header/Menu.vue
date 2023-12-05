@@ -8,6 +8,7 @@
       <NuxtLink to="/">Home</NuxtLink>
       <NuxtLink to="/events">Events</NuxtLink>
       <NuxtLink to="/test">Test</NuxtLink>
+      <NuxtLink to="/admin">Admin</NuxtLink>
     </li>
   </ul>
 </template>

@@ -4,6 +4,7 @@
 
 <template>
   <div>Main page</div>
+  <Counter />
 </template>
 
 <style scoped>

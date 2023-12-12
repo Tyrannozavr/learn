@@ -4,13 +4,13 @@
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  nitro: {
-    prerender: {
-      routes: [
-          "/fetch/useLazy"
-      ]
-    }
-  },
+  // nitro: {
+  //   prerender: {
+  //     routes: [
+  //         "/fetch/useLazy"
+  //     ]
+  //   }
+  // },
   ssr: true,
   // alias: {
   //   "@": resolve(__dirname, "/")

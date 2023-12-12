@@ -5,19 +5,21 @@ definePageMeta({
   layout: "fetch"
 })
 
-const {data: products, pending } = useLazyFetch('/api/products')
+const {data: products, pending } = useLazyFetch('/api/productsClientSide')
 
 const {data: ssrProducts } = await useFetch(('/api/products'))
 
 </script>
 
 <template>
-use lazy
-  {{products}} {{pending}}
+<!--use lazy-->
+  <div class="ssrFalseProducts">
+    {{products}} {{pending}}
+  </div>
   <icons-loading />
   <div>
-    useFetch
-    <div>
+<!--    useFetch-->
+    <div class="ssrProducts">
       {{ssrProducts}}
     </div>
   </div>

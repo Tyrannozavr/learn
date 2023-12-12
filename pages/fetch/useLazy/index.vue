@@ -12,16 +12,18 @@ const {data: ssrProducts } = await useFetch(('/api/products'))
 </script>
 
 <template>
-<!--use lazy-->
-  <div class="ssrFalseProducts">
-    {{products}} {{pending}}
+  <h4>Here is ssr loaded products</h4>
+  <div class="ssrProducts">
+<!--    {{ssrProducts}}-->
+    <products-list :products="ssrProducts" />
   </div>
-  <icons-loading />
+  <h4>And here will be Client side loaded products</h4>
+  <icons-loading v-if="pending" />
+  <div class="ssrFalseProducts" v-else>
+<!--    {{products}}-->
+    <products-list :products="products" />
+  </div>
   <div>
-<!--    useFetch-->
-    <div class="ssrProducts">
-      {{ssrProducts}}
-    </div>
   </div>
 </template>
 

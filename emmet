@@ -1,0 +1,3 @@
+to begin emmet extention html run tab
+to add custom attribute use for example div[to='hello']
+it seems that server folder might contain server logic and return a json

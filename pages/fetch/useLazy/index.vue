@@ -7,7 +7,7 @@ definePageMeta({
 
 const {data: products, pending } = useLazyFetch('/api/productsClientSide')
 
-const {data: ssrProducts } = await useFetch(('/api/products'))
+const {data: ssrProducts } = await useFetch('/api/products')
 
 </script>
 
